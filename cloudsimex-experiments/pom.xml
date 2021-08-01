@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.cloudbus</groupId>
+    <artifactId>cloudsimex</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>cloudsimex-experiments</artifactId>
+  
+  <build>
+  <plugins>
+    <plugin>
+      <artifactId>maven-assembly-plugin</artifactId>
+      <configuration>
+        <descriptorRefs>
+          <descriptorRef>jar-with-dependencies</descriptorRef>
+        </descriptorRefs>
+        <archive>
+          <manifest>
+            <mainClass>org.cloudbus.cloudsim.ex.web.experiments.MultiCloudStarter</mainClass>
+          </manifest>
+        </archive>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+
+
+  <dependencies>
+  	<dependency>
+  		<groupId>org.cloudbus</groupId>
+  		<artifactId>cloudsimex-core</artifactId>
+  		<version>${project.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.cloudbus</groupId>
+  		<artifactId>cloudsimex-web</artifactId>
+  		<version>${project.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>net.lingala.zip4j</groupId>
+  		<artifactId>zip4j</artifactId>
+  		<version>1.3.1</version>
+  	</dependency>
+  </dependencies>
+</project>

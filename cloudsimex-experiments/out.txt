@@ -1,0 +1,60 @@
+Main process Id (PID) is: 13046. Use: 
+	kill -SIGINT 13046
+to kill all experiments
+
+Rediricting output to /home/jquintana/Desktop/CloudSimEx/cloudsimex-experiments/multi-cloud/stat/wldf(baseline)-wldf-200-sla-30-n-1-db-15/MultiCloudFramework.log
+Rediricting output to /home/jquintana/Desktop/CloudSimEx/cloudsimex-experiments/multi-cloud/stat/wldf(run)-wldf-200-sla-30-n-1-db-15/MultiCloudFramework.log
+java.nio.file.NoSuchFileException: multi-cloud/stat/wldf(baseline)-wldf-200-sla-30-n-1-db-15/MultiCloudFramework.log.lck
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:177)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at java.util.logging.FileHandler.openFiles(FileHandler.java:478)
+	at java.util.logging.FileHandler.<init>(FileHandler.java:344)
+	at org.cloudbus.cloudsim.ex.util.CustomLog.redirectToFile(CustomLog.java:626)
+	at org.cloudbus.cloudsim.ex.util.CustomLog.redirectToFile(CustomLog.java:605)
+	at org.cloudbus.cloudsim.ex.util.CustomLog.configLogger(CustomLog.java:594)
+	at org.cloudbus.cloudsim.ex.web.experiments.MultiCloudFramework.configandRun(MultiCloudFramework.java:241)
+	at org.cloudbus.cloudsim.ex.web.experiments.MultiCloudFramework.main(MultiCloudFramework.java:197)
+java.nio.file.NoSuchFileException: multi-cloud/stat/wldf(run)-wldf-200-sla-30-n-1-db-15/MultiCloudFramework.log.lck
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:177)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at java.util.logging.FileHandler.openFiles(FileHandler.java:478)
+	at java.util.logging.FileHandler.<init>(FileHandler.java:344)
+	at org.cloudbus.cloudsim.ex.util.CustomLog.redirectToFile(CustomLog.java:626)
+	at org.cloudbus.cloudsim.ex.util.CustomLog.redirectToFile(CustomLog.java:605)
+	at org.cloudbus.cloudsim.ex.util.CustomLog.configLogger(CustomLog.java:594)
+	at org.cloudbus.cloudsim.ex.web.experiments.MultiCloudFramework.configandRun(MultiCloudFramework.java:241)
+	at org.cloudbus.cloudsim.ex.web.experiments.MultiCloudFramework.main(MultiCloudFramework.java:197)
+[Run]Exp-wldf(200)-sla(30)-n(1)-db(15): The simulation has been terminated due to an unexpected error
+java.lang.IllegalStateException: No match found
+	at java.util.regex.Matcher.group(Matcher.java:536)
+	at org.cloudbus.cloudsim.ex.web.workload.freq.FiniteValuedInterval.createInterval(FiniteValuedInterval.java:204)
+	at org.cloudbus.cloudsim.ex.web.workload.freq.FiniteValuedInterval.createInterval(FiniteValuedInterval.java:196)
+	at org.cloudbus.cloudsim.ex.web.workload.freq.CompositeValuedSet.createCompositeValuedSet(CompositeValuedSet.java:101)
+	at org.cloudbus.cloudsim.ex.web.experiments.MultiCloudFramework.generateWorkload(MultiCloudFramework.java:608)
+	at org.cloudbus.cloudsim.ex.web.experiments.MultiCloudFramework.runExperimemt(MultiCloudFramework.java:422)
+	at org.cloudbus.cloudsim.ex.web.experiments.MultiCloudFramework.configandRun(MultiCloudFramework.java:242)
+	at org.cloudbus.cloudsim.ex.web.experiments.MultiCloudFramework.main(MultiCloudFramework.java:197)
+[Run]Exp-wldf(200)-sla(30)-n(1)-db(15): Finished in 1 seconds
+[Baseline]Exp-wldf(200)-sla(30)-n(1)-db(15): The simulation has been terminated due to an unexpected error
+java.lang.IllegalStateException: No match found
+	at java.util.regex.Matcher.group(Matcher.java:536)
+	at org.cloudbus.cloudsim.ex.web.workload.freq.FiniteValuedInterval.createInterval(FiniteValuedInterval.java:204)
+	at org.cloudbus.cloudsim.ex.web.workload.freq.FiniteValuedInterval.createInterval(FiniteValuedInterval.java:196)
+	at org.cloudbus.cloudsim.ex.web.workload.freq.CompositeValuedSet.createCompositeValuedSet(CompositeValuedSet.java:101)
+	at org.cloudbus.cloudsim.ex.web.experiments.MultiCloudFramework.generateWorkload(MultiCloudFramework.java:608)
+	at org.cloudbus.cloudsim.ex.web.experiments.MultiCloudFramework.runExperimemt(MultiCloudFramework.java:422)
+	at org.cloudbus.cloudsim.ex.web.experiments.MultiCloudFramework.configandRun(MultiCloudFramework.java:242)
+	at org.cloudbus.cloudsim.ex.web.experiments.MultiCloudFramework.main(MultiCloudFramework.java:197)
+[Baseline]Exp-wldf(200)-sla(30)-n(1)-db(15): Finished in 1 seconds
+
+All experiments are finished
+Killing subprocesses...
+All subprocesses are killed. Shutting down.

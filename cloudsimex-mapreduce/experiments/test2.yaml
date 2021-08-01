@@ -1,0 +1,39 @@
+!!org.cloudbus.cloudsim.ex.mapreduce.Experiment
+
+workloads:
+ - !!org.cloudbus.cloudsim.ex.mapreduce.Workload
+   [
+    BBDecision, Hybrid,
+      {
+        GOLD: 100.0,
+        SILVER: 60.0,
+        BRONZE: 0.0
+      },
+    [
+     #[Submission Time, Deadline, Budget, Job, user class]
+     !!org.cloudbus.cloudsim.ex.mapreduce.models.request.Request
+     [200000, 120, 2.5, MapReduce_9_2.yaml, GOLD],
+    ]
+   ]
+ - !!org.cloudbus.cloudsim.ex.mapreduce.Workload
+   [
+    LFFCost, Hybrid,
+      {
+        GOLD: 100.0,
+        SILVER: 60.0,
+        BRONZE: 0.0
+      },
+    [
+    ]
+   ]
+ - !!org.cloudbus.cloudsim.ex.mapreduce.Workload
+   [
+    BBMultiCost, Hybrid,
+      {
+        GOLD: 100.0,
+        SILVER: 60.0,
+        BRONZE: 0.0
+      },
+    [
+    ]
+   ]

@@ -1,0 +1,1 @@
+- Boot time is not considered in simulator and in prediction
